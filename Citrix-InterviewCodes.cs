@@ -33,7 +33,7 @@ class Solution
             hits.Add(val, 0);
             foreach (KeyValuePair<string, int> Pair in valuePairs)
             {
-                if (Pair.Key.Contains(val))
+                if (Pair.Key.EndsWith(val))
                 {
                     hits[val] += Pair.Value;
                 }
